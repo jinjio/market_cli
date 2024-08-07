@@ -8,7 +8,7 @@
             round
             icon="arrow_back"
             @click="$router.back()"
-            v-if="$route.path !== '/'"
+            v-if="$route.path !== '/' && $route.path !== '/product_list'"
           />
         </div>
         <q-toolbar-title
