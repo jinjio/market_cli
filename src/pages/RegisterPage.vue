@@ -39,16 +39,12 @@
             </div>
           </q-card-section>
           <q-separator />
-          <q-card-section v-if="!$jkutil.user.isLoggedIn">
+          <!-- <q-card-section v-if="!$jkutil.user.isLoggedIn">
             <div class="row q-mx-auto">
               <q-btn class="col-12" @click="onClickGoogleLogin" icon="img:/social/login_google.svg" outline>{{
             $t('google_login') }}</q-btn>
-
-              <!-- <q-btn @click="onClickKakaoLogin" class="bg-yellow col" icon="img:/social/login_kakao@3x.png">
-                {{ $t('kakao_login') }}
-              </q-btn> -->
             </div>
-          </q-card-section>
+          </q-card-section> -->
         </q-card>
       </div>
     </div>
@@ -88,7 +84,7 @@ const onClickLoginByEmail = async () => {
   console.log('onClickLoginByEmail')
   if ($jkutil.isValidEmail(contact.value) == false) {
     jkutil.showError(t('invalid_email'))
-    return  
+    return
   }
   let result = await $api.requestLoginCode(contact.value)
   success.value = result.is_success
