@@ -1,9 +1,9 @@
 {
   "name": "ankichampioncli",
   "version": "0.6.0",
-  "description": "안키챔피언",
-  "productName": "안키챔피언",
-  "author": "jjk <jjk@beyondapp.com>",
+  "description": "마켓플레이스",
+  "productName": "마켓플레이스",
+  "author": "jinjio <jinjio2002@gmail.com>",
   "private": true,
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
