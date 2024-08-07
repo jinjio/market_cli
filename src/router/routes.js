@@ -21,16 +21,6 @@ const routes = [
     }
   },
   {
-    path: '/test',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/TestPage.vue') }
-    ],
-    meta: {
-      authRequired: false
-    }
-  },
-  {
     path: '/chat_list',
     component: () => import('layouts/MainLayout.vue'),
     children: [
