@@ -9,6 +9,6 @@ import { ref, onMounted, computed, watch } from "vue"
 import { $jkutil, $t, $api, $q, $router } from 'boot/jkutil'
 
 onMounted(async () => {
-  $router.replace(`/my_chat`)
+  // $router.replace(`/my_chat`)
 })
 </script>
