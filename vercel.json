@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    }
+  ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
