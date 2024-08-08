@@ -14,7 +14,7 @@ export default {
   support: "Support",
   my: 'My',
   feeds: 'Feeds',
-  AppName: 'AnkiChampion',
+  AppName: 'MarketPlace',
   already_logged: 'Already Logged In.',
   home: 'Home',
   logout: 'Logout',

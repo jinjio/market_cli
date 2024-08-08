@@ -19,7 +19,8 @@ if (process.env.DEV && force_live === false) {
   host = 'localhost'
   baseURL = `http://${host}:${port}`
 } else {
-  host = 'api.ankichampion.com'
+  // host = 'api.ankichampion.com'
+  host = 'marketplace-svr-jinjio-jinjios-projects.vercel.app'
   baseURL = `https://${host}:${port}`
 }
 
