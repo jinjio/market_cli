@@ -20,7 +20,7 @@ if (process.env.DEV && force_live === false) {
   baseURL = `http://${host}:${port}`
 } else {
   // host = 'api.ankichampion.com'
-  host = 'marketplace-svr-jinjio-jinjios-projects.vercel.app'
+  host = 'http://ec2-3-34-53-96.ap-northeast-2.compute.amazonaws.com'
   baseURL = `https://${host}:${port}`
 }
 
