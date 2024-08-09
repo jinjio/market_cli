@@ -21,8 +21,8 @@ if (process.env.DEV && force_live === false) {
 } else {
   // host = 'api.ankichampion.com'
   host = 'reviewral.com'
-  // baseURL = `https://${host}:${port}`
-  baseURL = `https://${host}`
+  baseURL = `https://${host}:${port}`
+  // baseURL = `https://${host}`
 }
 
 let udid = LocalStorage.getItem('udid')
@@ -168,7 +168,7 @@ const $api = {
       console.error('exising handler')
       return
     }
-    websocket_message_handler.push(message_handler)
+    websocket_message_handler.push('test1',message_handler)
     // Chat.vue가 먼저 열면서 다른 친구들한테 기회를 안주기때문에 이걸로 막음.
     if (websocket == null && connect == true) {
       connect_websocket(url)

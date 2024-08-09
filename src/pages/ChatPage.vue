@@ -100,7 +100,7 @@ onMounted(async () => {
   if (response == null) {
     return;
   }
-
+  console.log('chat_room_id', props.chat_room_id)
   $api.addWebsocketListner(
     onWebsocketMessage,
     `/chat_room/${props.chat_room_id}`
