@@ -20,7 +20,7 @@ if (process.env.DEV && force_live === false) {
   baseURL = `http://${host}:${port}`
 } else {
   // host = 'api.ankichampion.com'
-  host = 'http://ec2-3-34-53-96.ap-northeast-2.compute.amazonaws.com'
+  host = 'ec2-3-34-53-96.ap-northeast-2.compute.amazonaws.com'
   baseURL = `https://${host}:${port}`
 }
 
