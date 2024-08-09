@@ -80,6 +80,7 @@ axiosInstance.interceptors.response.use(
 )
 
 let websocket_url = baseURL.replace('http', 'ws')
+// websocket_url = baseURL.replace(':9099', '')
 let websocket
 
 const connect_websocket = (url) => {
@@ -168,7 +169,7 @@ const $api = {
       console.error('exising handler')
       return
     }
-    websocket_message_handler.push('test1',message_handler)
+    websocket_message_handler.push(message_handler)
     // Chat.vue가 먼저 열면서 다른 친구들한테 기회를 안주기때문에 이걸로 막음.
     if (websocket == null && connect == true) {
       connect_websocket(url)
