@@ -21,7 +21,8 @@ if (process.env.DEV && force_live === false) {
 } else {
   // host = 'api.ankichampion.com'
   host = 'ec2-3-34-53-96.ap-northeast-2.compute.amazonaws.com'
-  baseURL = `https://${host}:${port}`
+  // baseURL = `https://${host}:${port}`
+  baseURL = `http://${host}:${port}`
 }
 
 let udid = LocalStorage.getItem('udid')
