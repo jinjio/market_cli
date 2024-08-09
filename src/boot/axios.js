@@ -21,8 +21,8 @@ if (process.env.DEV && force_live === false) {
 } else {
   // host = 'api.ankichampion.com'
   host = 'reviewral.com'
-  baseURL = `https://${host}:${port}`
-  // baseURL = `https://${host}`
+  // baseURL = `https://${host}:${port}`
+  baseURL = `https://${host}`
 }
 
 let udid = LocalStorage.getItem('udid')
